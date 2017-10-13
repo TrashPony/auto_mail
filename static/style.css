@@ -1,0 +1,56 @@
+body{
+
+}
+
+.Error {
+    color: #c31d00;
+    display: inline
+}
+
+.ok {
+    margin: 4px;
+    padding: 2px;
+    border: 2px solid #ffc90f;
+    border-radius: 4px;
+    color: black;
+    background-color: #ffdc18;
+    width: 60px;
+    display: block;
+}
+
+.ok:hover {
+    border: 2px solid #f41303;
+    background-color: #cd0900;
+}
+
+.main {
+    padding-left: 15px;
+    align-content: center;
+    border: 1px solid #312d00;
+    width: 550px;
+}
+
+.ConfigLine{
+    margin: 4px;
+    padding: 2px;
+    border: 2px solid #b1fff7;
+    border-radius: 4px;
+    color: black;
+    background-color: #e7ffee;
+    width: 500px;
+    display: block;
+}
+
+.ConfigLine.Error{
+    border: 2px solid #c31d00;
+}
+
+.ConfigLine.Passed{
+    border: 2px solid #16b104;
+}
+
+.ConfigLine:hover {
+    border: 2px solid #1deef4;
+    background-color: #63c0cd;
+}
+

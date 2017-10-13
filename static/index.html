@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+    <script> ConnectLobby() </script>
+</head>
+<body>
+
+<div class="main" id="main">
+    <b>Новый адресат</b><br>
+    <input type="email" name="email" id="Email" size="45" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">Email <p>
+    <input type="text" id="Path" size="45">Путь до папки<p>
+    <input type="submit" value="Добавить" onclick=Add()><br>
+    <p>
+    <div id="List"></div>
+    <p><input type="submit"  value="Отправить!" onclick=Send()>
+
+</div>
+</body>
+</html>
