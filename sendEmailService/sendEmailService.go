@@ -3,7 +3,7 @@ package sendEmailService
 import (
 	"os"
 	"io/ioutil"
-	"gomail-master"
+	"github.com/gomail"
 	"crypto/tls"
 )
 

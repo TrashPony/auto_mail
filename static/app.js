@@ -55,6 +55,11 @@ function ReaderLobby(jsonMessage) {
                 configLine.innerHTML = value + " ERR DIR";
             }
         }
+
+        var button = document.getElementById("SendButton");
+
+        button.value = "Отправить!";
+        button.onclick = Send;
     }
 
     if (event === "Config"){
@@ -127,6 +132,11 @@ function Send() {
     }
 
     Config();
+
+    var button = document.getElementById("SendButton");
+
+    button.value = "Ожидайте";
+    button.onclick = null;
 
     sock.send(JSON.stringify({
         event:"Send"
