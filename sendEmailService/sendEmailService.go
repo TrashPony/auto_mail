@@ -41,7 +41,7 @@ func SendEmailService() (map[string]int)  {
 
 func SendMail(toMail string, pathFile string) (error) {
 	m := gomail.NewMessage()
-	m.SetHeader("From", "a.sveshnikova@topdelivery.ru")
+	m.SetHeader("From", "E-mail") //TODO add Email
 	m.SetHeader("To", toMail)
 	m.SetHeader("Subject", "Расчетные листки")
 	m.SetBody("text/html", "Добрый день! Во вложении расчетный листок по заработной плате.")
